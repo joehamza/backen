@@ -4,10 +4,10 @@ $request_method=define("URL", str_replace("index.php","",(isset($_SERVER['HTTPS'
 	
 $data=array(
 
-'id'=>$b['id'],
-'code'=>$b['code'],
-'produit'=>$b['produit'],
-'cat'=>$b['cat']);
+'id'=>$_POST['id'],
+'code'=>$_POST['code'],
+'produit'=>$_POST['produit'],
+'cat'=>$_POST['cat']);
 
 $aa[] = $data;
 header("Access-Control-Allow-Origin: *");
