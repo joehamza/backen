@@ -2,17 +2,26 @@
 $request_method=define("URL", str_replace("index.php","",(isset($_SERVER['HTTPS'])? "https" : "http").
 "://".$_SERVER['HTTP_HOST'].$_SERVER["PHP_SELF"]));
 
-$data=array(
 
-'id'=>$_POST['id'],
-'code'=>$_POST['code'],
-'produit'=>$_POST['produit'],
-'cat'=>$_POST['cat']);
+
+mysql_connect('localhost','root','');
+    mysql_select_db('oaic');
+	$row=mysql_query("select * from model ");
+	$a=mysql_fetch_array($row);
+	
+//$data=array(
+
+//'id'=>$b['id'],
+//'code'=>$b['code'],
+//'produit'=>$b['produit'],
+//'cat'=>$b['cat']);
 //}
-$a[] = $data;
+$aa[] = $a;
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
-  echo $b=json_encode($a);
+  echo $b=json_encode($aa);
 
- file_put_contents('https://github.com/joehamza/backen/edit/main/model.json/model.json', $b);
+ file_put_contents('model.json', $b);
+
+
 ?>
