@@ -16,4 +16,8 @@ header("Content-Type: application/json");
 
  file_put_contents('model.json', $b);
 
+http_response_code(404);
+include('my_404.php'); // provide your own HTML for the error page
+die();
+
 ?>
