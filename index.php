@@ -14,5 +14,5 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
   echo $b=json_encode($a);
 
- file_put_contents('model.json', $b);
+ file_put_contents('https://github.com/joehamza/backen/edit/main/model.json/model.json', $b);
 ?>
