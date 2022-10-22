@@ -36,8 +36,4 @@ $formations = json_decode(file_get_contents($b));
         </tr>
     <?php endforeach; ?>
 </table>
-
-
-
-?>
 	
