@@ -19,7 +19,7 @@ $data7=array(
 'id7'=>$_POST['id7'],
 );
 }
-//header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Origin: *");
 //header("Content-Type: application/json");
    //$b=json_encode($aa);
 
