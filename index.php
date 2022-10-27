@@ -35,5 +35,4 @@ $data7=array(
       ?>
  <=?$sor-client ?>;
  <?php  endforeach; ?>
-?>
 </form>
