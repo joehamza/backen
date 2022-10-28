@@ -11,7 +11,7 @@ $data=array(
 'id6'=>$_POST['id6'],
 'id7'=>$_POST['id7']
 );
-}
+
 header("Access-Control-Allow-Origin: *");
 //header("Content-Type: application/json");
   echo $b=json_encode($data);
