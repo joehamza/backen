@@ -1,5 +1,5 @@
 <?php
-if(!empty($_POST["id"]))){
+if(!empty($_POST["id"])){
 $data=array(
 'id'=>$_POST['id'],
 );
