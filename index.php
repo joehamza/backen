@@ -11,10 +11,11 @@ $data=array(
 'id6'=>$_POST['id6'],
 'id7'=>$_POST['id7']
 );
-
+$rt= array();
+$rt[]=$data;
+$b=json_encode($rt);
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
-$b=json_encode($data);
   echo"$b";
  file_put_contents('entree.json', $data);
  //file_put_contents('entot.json', $data2);
