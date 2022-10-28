@@ -1,5 +1,5 @@
 <?php
-if(!empty($_POST["id"])){
+//if(!empty($_POST["id"])){
 $data=array(
 'id'=>$_POST['id'],
 );
@@ -18,7 +18,7 @@ $data6=array(
 $data7=array(
 'id7'=>$_POST['id7'],
 );
-}
+//}
 header("Access-Control-Allow-Origin: *");
 //header("Content-Type: application/json");
   echo $b=json_encode($data);
