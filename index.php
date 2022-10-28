@@ -13,7 +13,7 @@ $data=array(
 );
 
 header("Access-Control-Allow-Origin: *");
-//header("Content-Type: application/json");
+header("Content-Type: application/json");
   echo $b=json_encode($data);
  file_put_contents('entree.json', $data);
  file_put_contents('entot.json', $data2);
