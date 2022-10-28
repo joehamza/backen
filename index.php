@@ -21,7 +21,7 @@ $data7=array(
 }
 header("Access-Control-Allow-Origin: *");
 //header("Content-Type: application/json");
-   //$b=json_encode($aa);
+  echo $b=json_encode($data);
 
  file_put_contents('entree.json', $data);
  file_put_contents('entot.json', $data2);
