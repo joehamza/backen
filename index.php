@@ -2,21 +2,11 @@
 //if(!empty($_POST["id"])){
 $data=array(
 'id'=>$_POST['id'],
-);
-$data2=array(
 'id2'=>$_POST['id2'],
-);
-$data4=array(
 'id4'=>$_POST['id4'],
-);
-$data5=array(
 'id5'=>$_POST['id5'],
-);
-$data6=array(
 'id6'=>$_POST['id6'],
-);
-$data7=array(
-'id7'=>$_POST['id7'],
+'id7'=>$_POST['id7']
 );
 //}
 header("Access-Control-Allow-Origin: *");
