@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['id'],$_POST['id2'],$_POST['id4'],$_POST['id5'],$_POST['id6'],$_POST['id7'])){
+if(!empty($_POST["id"]))){
 $data=array(
 'id'=>$_POST['id'],
 );
