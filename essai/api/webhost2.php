@@ -16,15 +16,6 @@ $b=json_encode($rt);
 //header("Content-Type: application/json");
   echo"$b";
 
- file_put_contents('entree.json', $data);
- file_put_contents('entot.json', $data2);
- file_put_contents('sortie.json', $data4);
- file_put_contents('sortot.json', $data5);
- file_put_contents('entit.json', $data6);
- file_put_contents('sortit.json', $data7);
+ file_put_contents('entree.json', $b);
 
- $sortie = json_decode(file_get_contents("entree.json"));
-  foreach ($sortie as $sor) :
-      ?>
- <=?$sor-client ?>;
- <?php  endforeach; ?>
+?>
