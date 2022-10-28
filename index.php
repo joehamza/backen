@@ -22,7 +22,7 @@ $data7=array(
 header("Access-Control-Allow-Origin: *");
 //header("Content-Type: application/json");
   echo $b=json_encode($data);
-
+echo"bonjour";
  file_put_contents('entree.json', $data);
  file_put_contents('entot.json', $data2);
  file_put_contents('sortie.json', $data4);
