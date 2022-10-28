@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['id'],$_POST['id2'],$_POST['id4'],$_POST['id5'],$_POST['id6'],$_POST['id7'])){
+//if(isset($_POST['id'],$_POST['id2'],$_POST['id4'],$_POST['id5'],$_POST['id6'],$_POST['id7'])){
 $data=array(
 'id'=>$_POST['id'],
 );
@@ -18,10 +18,13 @@ $data6=array(
 $data7=array(
 'id7'=>$_POST['id7'],
 );
-}
+//}
+$rt= array();
+$rt[]=$data;
+$b=json_encode($rt);
 //header("Access-Control-Allow-Origin: *");
 //header("Content-Type: application/json");
-   //$b=json_encode($aa);
+  echo"$b";
 
  file_put_contents('entree.json', $data);
  file_put_contents('entot.json', $data2);
