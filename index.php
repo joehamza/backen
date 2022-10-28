@@ -2,7 +2,7 @@
 define("URL", str_replace("index.php","",(isset($_SERVER['HTTPS'])? "https" : "http").
 "://".$_SERVER['HTTP_HOST'].$_SERVER["PHP_SELF"]));
 
- $sortie = json_decode(file_get_contents("https://apibackend3.herokuapp.com/essai/api/webhost2.php"));
+ $sortie = json_decode(file_get_contents("webhost2.php"));
   foreach ($sortie as $sor) :?>
 <=? $sor->id?>
 <=? $sor->id2?>
