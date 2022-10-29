@@ -32,7 +32,7 @@ ob_start();
     <?php endforeach; ?>
        <?php foreach ($entot as $ent) : ?>
         $qe4=number_format($ent->q4,2,',','');
-        <tr><td align="center">Total</td><td align="center"><?= $ent->c4?></td><td align="center">/</td><td align="center"><?= $ent->c4?><td align="center"><?= $ent->$qe4?></td></td><td align="center">/</td><td align="center">/</td><td align="center">/</td></tr>
+        <tr><th>Total</th><td align="center"><?= $ent->c4?></td><td align="center">/</td><td align="center"><?= $qe4?></td><td align="center">/</td><td align="center">/</td><td align="center">/</td></tr>
         <?php endforeach; ?>
 </table>
   //////////////////////////////////////////////////////////////////  
