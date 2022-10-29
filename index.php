@@ -29,7 +29,7 @@ ob_start();
             <td align="center"><?= $ent->quantite ?></td>
             <td align="center"><?= $ent->deb ?></td>
             <td align="center"><?= $ent->rest ?></td>
-            <td align="center"><?= $ent-produit ?></td></tr>
+            <td align="center"><?= $ent->produit ?></td></tr>
     <?php endforeach; ?>
 </table>
   //////////////////////////////////////////////////////////////////  
