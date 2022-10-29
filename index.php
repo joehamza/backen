@@ -1,12 +1,38 @@
 <?php
 define("URL", str_replace("index.php","",(isset($_SERVER['HTTPS'])? "https" : "http").
 "://".$_SERVER['HTTP_HOST'].$_SERVER["PHP_SELF"]));
+$entree = json_decode(file_get_contents("essai/api/sortot.json"));
 $sortie = json_decode(file_get_contents("essai/api/entree.json"));
 $sortietot = json_decode(file_get_contents("essai/api/entot.json"));
 $stock = json_decode(file_get_contents("essai/api/sortit.json"));
 ob_start();
 ?>
 <center>
+    <table border="1" style="border-collapse:collapse;font-size:25px">
+    <?php foreach ($entree as $et) : ?>
+    <tr><td colspan="7" align="center"><div style="font-size:30px;">*Les entrées le <?=$et->Date ?></div></td></tr>
+    <?php endforeach; ?>
+    <tr>
+        <th>Navire</th>
+        <th>NBR</th>
+        <th>Fosse</th>
+        <th>Débarqué</th>
+        <th>T/Débarqué</th>
+        <th>R/à bord</th>
+        <th>Produit</th>
+    </tr>
+    <?php foreach ($entree as $ent) : ?>    
+     <tr>
+            <td align="center"><?= $ent->client ?></td>
+            <td align="center"><?= $ent->nbr ?></td>
+            <td align="center"><?= $ent->fos ?></td>
+            <td align="center"><?= $ent->quantite ?></td>
+            <td align="center"><?= $ent->deb ?></td>
+            <td align="center"><?= $ent->rest ?></td>
+            <td align="center"><?= $ent-produit ?></td></tr>
+    <?php endforeach; ?>
+</table>
+  //////////////////////////////////////////////////////////////////  
 <table border="1" style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
     <tr><td colspan="7" align="center"><div style="font-size:30px;">*Enlèvements du silo portuaire le <?=$sortot->Date ?></div></td></tr>
