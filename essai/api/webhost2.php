@@ -1,5 +1,6 @@
 <?php
-//if(isset($_POST['id'],$_POST['id2'],$_POST['id4'],$_POST['id5'],$_POST['id6'],$_POST['id7'])){
+if(isset($_POST['id'],$_POST['id2'],$_POST['id4'],$_POST['id5'],$_POST['id6'],$_POST['id7'])){
+
 $data=array(
 'id'=>$_POST['id'],
 );
@@ -32,5 +33,5 @@ file_put_contents('entot.json', $data2);
  file_put_contents('sortot.json', $data5);
  file_put_contents('entit.json', $data6);
  file_put_contents('sortit.json', $data7);
-
+}
 ?>
