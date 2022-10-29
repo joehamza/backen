@@ -2,6 +2,7 @@
 define("URL", str_replace("index.php","",(isset($_SERVER['HTTPS'])? "https" : "http").
 "://".$_SERVER['HTTP_HOST'].$_SERVER["PHP_SELF"]));
 $entree = json_decode(file_get_contents("essai/api/sortot.json"));
+$entot = json_decode(file_get_contents("essai/api/sortie.json"));
 $sortie = json_decode(file_get_contents("essai/api/entree.json"));
 $sortietot = json_decode(file_get_contents("essai/api/entot.json"));
 $stock = json_decode(file_get_contents("essai/api/sortit.json"));
@@ -9,7 +10,7 @@ ob_start();
 ?>
 <center>
     <table border="1" style="border-collapse:collapse;font-size:25px">
-    <?php foreach ($entree as $et) : ?>
+    <?php foreach ($entot as $et) : ?>
     <tr><td colspan="7" align="center"><div style="font-size:30px;">*Les entrées le <?=$et->Date ?></div></td></tr>
     <?php endforeach; ?>
     <tr>
