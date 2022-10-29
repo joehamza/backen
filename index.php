@@ -1,9 +1,6 @@
 <?php
 define("URL", str_replace("index.php","",(isset($_SERVER['HTTPS'])? "https" : "http").
 "://".$_SERVER['HTTP_HOST'].$_SERVER["PHP_SELF"]));
-
- $sortie = json_decode(file_get_contents("essai/api/entree.json"));
- <?php
 $sortie = json_decode(file_get_contents("essai/api/entree.json"));
 $sortietot = json_decode(file_get_contents("essai/api/entot.json"));
 $stock = json_decode(file_get_contents("essai/api/sortit.json"));
