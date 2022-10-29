@@ -23,7 +23,7 @@ $data7=array(
 //$rt= array();
 //$rt[]=$data;
 //$b=json_encode($rt);
-header("Access-Control-Allow-Origin: *");
+//header("Access-Control-Allow-Origin: *");
 //header("Content-Type: application/json");
  // echo"$b";
 
