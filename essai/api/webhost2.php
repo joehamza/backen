@@ -2,20 +2,30 @@
 //if(isset($_POST['id'],$_POST['id2'],$_POST['id4'],$_POST['id5'],$_POST['id6'],$_POST['id7'])){
 $data=array(
 'id'=>$_POST['id'],
-  'id2'=>$_POST['id2'],
+);
+$data2=array(
+'id2'=>$_POST['id2'],
+);
+$data4=array(
 'id4'=>$_POST['id4'],
+);
+$data5=array(
 'id5'=>$_POST['id5'],
+);
+$data6=array(
 'id6'=>$_POST['id6'],
-'id7'=>$_POST['id7']
+);
+$data7=array(
+'id7'=>$_POST['id7'],
 );
 //}
-$rt= array();
-$rt[]=$data;
-$b=json_encode($rt);
+//$rt= array();
+//$rt[]=$data;
+//$b=json_encode($rt);
 header("Access-Control-Allow-Origin: *");
 //header("Content-Type: application/json");
   echo"$b";
 
- file_put_contents('entree.json', $b);
+ file_put_contents('entree.json', $data);
 
 ?>
