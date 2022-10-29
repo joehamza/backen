@@ -33,7 +33,7 @@ ob_start();
        <?php foreach ($entot as $ent) : ?>
        <?php $qe4=number_format($ent->ooo4,2,',','');
         $fos4=number_format($ent->fos4,2,',','');?>
-        <tr><th>Total</th><td align="center"><?= $ent->c4?></td><td align="center">/</td><td align="center"><?= $fos4?></td><td align="center">?= $qe4?</td><td align="center">/</td><td align="center">/</td></tr>
+        <tr><th>Total</th><td align="center"><?= $ent->c4?></td><td align="center"><?= $fos4 ?></td><td align="center"><?= $qe4 ?></td><td align="center">/</td><td align="center">/</td><td align="center">/</td></tr>
         <?php endforeach; ?>
 </table>
   //////////////////////////////////////////////////////////////////  
