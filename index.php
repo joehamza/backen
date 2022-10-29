@@ -74,7 +74,7 @@ ob_start();
     <?php endforeach; ?>
     </table>
     <br><br>
-    <table border="1" width="30%" style="border-collapse:collapse;font-size:25px">
+    <table border="1" width="50%" style="border-collapse:collapse;font-size:25px">
     <tr><td colspan="7" align="center"><div style="font-size:30px;">*Stock comptable</div></td></tr>
     <tr>
         <th>Produit</th>
