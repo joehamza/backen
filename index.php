@@ -1,6 +1,4 @@
 <?php
-define("URL", str_replace("index.php","",(isset($_SERVER['HTTPS'])? "https" : "http").
-"://".$_SERVER['HTTP_HOST'].$_SERVER["PHP_SELF"]));
 $entree = json_decode(file_get_contents("essai/api/sortot.json"));
 $entot = json_decode(file_get_contents("essai/api/sortie.json"));
 $sortie = json_decode(file_get_contents("essai/api/entree.json"));
@@ -32,6 +30,10 @@ ob_start();
             <td align="center"><?= $ent->rest ?></td>
             <td align="center"><?= $ent->produit ?></td></tr>
     <?php endforeach; ?>
+       <?php foreach ($entot as $ent) : ?>
+        $qe4=number_format($ent->q4,2,',','');
+        <tr><td align="center">Total</td><td align="center"><?= $ent->c4?></td><td align="center">/</td><td align="center"><?= $ent->c4?><td align="center"><?= $ent->$qe4?></td></td><td align="center">/</td><td align="center">/</td><td align="center">/</td></tr>
+        <?php endforeach; ?>
 </table>
   //////////////////////////////////////////////////////////////////  
 <table border="1" style="border-collapse:collapse;font-size:25px">
