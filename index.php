@@ -38,7 +38,7 @@ ob_start();
         <?php endforeach; ?>
         <?php foreach ($entreshif as $es) : ?>
         <tr><th colspan="7" align="center"><em>Shift <?= $es->navire ?> / début : <?= $es->jour ?> <?= $es->shift ?> le <?= $es->date ?></em></th></tr>
-        <tr><th colspan='2'>Matin</th><th colspan='2.5'>Soir</th><th colspan='3'>Nuit</th></tr>
+        <tr><th colspan='2'>Matin</th><th colspan='3'>Soir</th><th colspan='2.5'>Nuit</th></tr>
         <?php endforeach; ?>
 </table>
   //////////////////////////////////////////////////////////////////  
