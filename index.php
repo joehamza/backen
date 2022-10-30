@@ -8,7 +8,7 @@ $stock = json_decode(file_get_contents("essai/api/sortit.json"));
 ob_start();
 ?>
 <center>
-    <table border="1" width="90%" style="border-collapse:collapse;font-size:25px">
+    <table border="1" width="100%" style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
     <tr><td colspan="6" align="center"><div style="font-size:30px;">*Les entrées le <?=$et->Date ?></div></td></tr>
     <?php endforeach; ?>
@@ -44,7 +44,7 @@ ob_start();
         <?php endforeach; ?>
 </table>
   <br><br>  
-<table border="1" width="90%" style="border-collapse:collapse;font-size:25px">
+<table border="1" width="100%" style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
     <tr><td colspan="7" align="center"><div style="font-size:30px;">*Enlèvements du silo portuaire le <?=$sortot->Date ?></div></td></tr>
     <?php endforeach; ?>
