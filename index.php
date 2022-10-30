@@ -1,6 +1,7 @@
 <?php
 $entree = json_decode(file_get_contents("essai/api/sortot.json"));
 $entot = json_decode(file_get_contents("essai/api/sortie.json"));
+$entreshif = json_decode(file_get_contents("essai/api/entit.json"));
 $sortie = json_decode(file_get_contents("essai/api/entree.json"));
 $sortietot = json_decode(file_get_contents("essai/api/entot.json"));
 $stock = json_decode(file_get_contents("essai/api/sortit.json"));
@@ -34,6 +35,9 @@ ob_start();
        <?php $qe4=number_format($ent->ooo4,2,',','');
         $fos4=number_format($ent->fos4,2,',','');?>
         <tr><th>Total</th><td align="center"><?= $ent->c4?></td><td align="center"><?= $fos4 ?></td><td align="center"><?= $qe4 ?></td><td align="center">/</td><td align="center">/</td><td align="center">/</td></tr>
+        <?php endforeach; ?>
+        <?php foreach ($entreshif as $es) : ?>
+        <tr><td colspan="7" align="center"><em>Shift <?= $es->navire ?> / début : <?= $es->jour ?> <?= $es->shift ?> le <?= $es->date ?></em></td></tr>
         <?php endforeach; ?>
 </table>
   //////////////////////////////////////////////////////////////////  
