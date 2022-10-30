@@ -5,13 +5,17 @@ $entreshif = json_decode(file_get_contents("essai/api/entit.json"));
 $sortie = json_decode(file_get_contents("essai/api/entree.json"));
 $sortietot = json_decode(file_get_contents("essai/api/entot.json"));
 $stock = json_decode(file_get_contents("essai/api/sortit.json"));
+$gbmode = json_decode(file_get_contents("essai/api/gbmode.json"));
+$heure = json_decode(file_get_contents("essai/api/heure.json"));
 ob_start();
 ?>
 <center>
     <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
-    <tr><td colspan="6" align="center"><div style="font-size:30px;">*Les entrées le <?=$et->Date ?></div></td></tr>
+        <?php foreach ($heure as $heur) : ?>
+    <tr><td colspan="6" align="center"><div style="font-size:30px;">*Les entrées le <?=$et->Date ?> à <?=$heur->heure ?></div></td></tr>
     <?php endforeach; ?>
+        <?php endforeach; ?>
     <tr>
         <th>Navire</th>
         <th>NBR</th>
