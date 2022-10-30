@@ -6,16 +6,17 @@ $sortie = json_decode(file_get_contents("essai/api/entree.json"));
 $sortietot = json_decode(file_get_contents("essai/api/entot.json"));
 $stock = json_decode(file_get_contents("essai/api/sortit.json"));
 $gbmode = json_decode(file_get_contents("essai/api/gbmode.json"));
-$heure = json_decode(file_get_contents("essai/api/heure.json"));
+date_default_timezone_set('Africa/Algiers');
+    $heure =date('H:i');
 ob_start();
 ?>
 <center>
     <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
-        <?php foreach ($heure as $heur) : ?>
-    <tr><td colspan="6" align="center"><div style="font-size:30px;">*Les entrées le <?=$et->Date ?> à <?=$heur->heure ?></div></td></tr>
+       
+    <tr><td colspan="6" align="center"><div style="font-size:30px;">*Les entrées le <?=$et->Date ?> à $heure</div></td></tr>
     <?php endforeach; ?>
-        <?php endforeach; ?>
+       
     <tr>
         <th>Navire</th>
         <th>NBR</th>
@@ -50,7 +51,7 @@ ob_start();
   <br><br>  
 <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
-    <tr><td colspan="7" align="center"><div style="font-size:30px;">*Enlèvements du silo portuaire le <?=$sortot->Date ?></div></td></tr>
+    <tr><td colspan="7" align="center"><div style="font-size:30px;">*Enlèvements du silo portuaire le <?=$sortot->Date ?> à $heure</div></td></tr>
     <?php endforeach; ?>
     <tr>
         <th>Organisme</th>
