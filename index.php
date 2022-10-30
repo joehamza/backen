@@ -40,7 +40,7 @@ ob_start();
         <tr><th colspan="7" align="center"><em>Shift <?= $es->navire ?> / début : <?= $es->jour ?> <?= $es->shift ?> le <?= $es->date ?></em></th></tr>
         <tr><th colspan='2'>Matin</th><th colspan='3'>Soir</th><th colspan='2.5'>Nuit</th></tr>
         <tr><th>Quantité</th><th>Camions</th><th>Quantité</th><th>Camions</th><th>Quantité</th><th>Camions</th></tr>
-<tr><td align='center'><?= $es->qm ?></td><td align='center' colspan='1.5'><?= $es->nm ?></td><td colspan='1.5' align='center'><?= $es->qs ?></td><td align='center'><?= $es->ns ?></td><td align='center'><?= $es->qn ?></td><td align='center'><?= $es->nn ?></td></tr>
+<tr><td align='center'><?= $es->qm ?></td><td align='center' colspan='2'><?= $es->nm ?></td><td colspan='2' align='center'><?= $es->qs ?></td><td align='center'><?= $es->ns ?></td><td align='center'><?= $es->qn ?></td><td align='center'><?= $es->nn ?></td></tr>
         <tr><td colspan='7' align='center'>Nombre de séjour après le début de débarquement : <?= $es->apre ?><br>Nombre de jours de débarquement : <?= $es->njour ?><br>Nombre de jours neant : <?= $es->neant ?></td></tr>
         <?php endforeach; ?>
 </table>
