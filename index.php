@@ -10,7 +10,7 @@ ob_start();
 <center>
     <table border="1" style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
-    <tr><td colspan="7" align="center"><div style="font-size:30px;">*Les entrées le <?=$et->Date ?></div></td></tr>
+    <tr><td colspan="6" align="center"><div style="font-size:30px;">*Les entrées le <?=$et->Date ?></div></td></tr>
     <?php endforeach; ?>
     <tr>
         <th>Navire</th>
@@ -19,7 +19,7 @@ ob_start();
         <th>Débarqué</th>
         <th>T/Débarqué</th>
         <th>R/à bord</th>
-        <th>Produit</th>
+        
     </tr>
     <?php foreach ($entree as $ent) : ?>    
      <tr>
@@ -28,8 +28,7 @@ ob_start();
             <td align="center"><?= $ent->fos ?></td>
             <td align="center"><?= $ent->quantite ?></td>
             <td align="center"><?= $ent->deb ?></td>
-            <td align="center"><?= $ent->rest ?></td>
-            <td align="center"><?= $ent->produit ?></td></tr>
+         <td align="center"><?= $ent->rest ?></td></tr>
     <?php endforeach; ?>
        <?php foreach ($entot as $ent) : ?>
        <?php $qe4=number_format($ent->ooo4,2,',','');
@@ -37,10 +36,10 @@ ob_start();
         <tr><th>Total</th><td align="center"><?= $ent->c4?></td><td align="center"><?= $fos4 ?></td><td align="center"><?= $qe4 ?></td><td align="center">/</td><td align="center">/</td><td align="center">/</td></tr>
         <?php endforeach; ?>
         <?php foreach ($entreshif as $es) : ?>
-        <tr><th colspan="7" align="center"><em>Shift <?= $es->navire ?> / début : <?= $es->jour ?> <?= $es->shift ?> le <?= $es->date ?></em></th></tr>
-        <tr><th colspan='2'>Matin</th><th colspan='4'>Soir</th><th colspan='2'>Nuit</th></tr>
-        <tr><th>Quantité</th><th>Camions</th><th colspan='2'>Quantité</th><th colspan='2'>Camions</th><th>Quantité</th><th>Camions</th></tr>
-<tr><td align='center'><?= $es->qm ?></td><td align='center'><?= $es->nm ?></td><td align='center' colspan='2'><?= $es->qs ?></td><td align='center' colspan='2'><?= $es->ns ?></td><td align='center'><?= $es->qn ?></td><td align='center'><?= $es->nn ?></td></tr>
+        <tr><th colspan="6" align="center"><em>Shift <?= $es->navire ?> / début : <?= $es->jour ?> <?= $es->shift ?> le <?= $es->date ? (<?= $es->produit ?>)></em></th></tr>
+        <tr><th colspan='2'>Matin</th><th colspan='2'>Soir</th><th colspan='2'>Nuit</th></tr>
+        <tr><th>Quantité</th><th>Camions</th><th>Quantité</th><th>Camions</th><th>Quantité</th><th>Camions</th></tr>
+<tr><td align='center'><?= $es->qm ?></td><td align='center'><?= $es->nm ?></td><td align='center'><?= $es->qs ?></td><td align='center'><?= $es->ns ?></td><td align='center'><?= $es->qn ?></td><td align='center'><?= $es->nn ?></td></tr>
         <tr><td colspan='7' align='center'>Nombre de séjour après le début de débarquement : <?= $es->apre ?><br>Nombre de jours de débarquement : <?= $es->njour ?><br>Nombre de jours neant : <?= $es->neant ?></td></tr>
         <?php endforeach; ?>
 </table>
