@@ -43,7 +43,7 @@ ob_start();
         <tr><td colspan='6' align='center'>Nombre de séjour après le début de débarquement : <?= $es->apre ?><br>Nombre de jours de débarquement : <?= $es->njour ?><br>Nombre de jours neant : <?= $es->neant ?></td></tr>
         <?php endforeach; ?>
 </table>
-  //////////////////////////////////////////////////////////////////  
+  <br><br>  
 <table border="1" style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
     <tr><td colspan="7" align="center"><div style="font-size:30px;">*Enlèvements du silo portuaire le <?=$sortot->Date ?></div></td></tr>
