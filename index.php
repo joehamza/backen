@@ -90,8 +90,8 @@ ob_start();
   <?php  $gbcq2=number_format($gbm->gbcq,2,',','');
      $gbwq2=number_format($gbm->gbwq,2,',','');?>
     <div style="font-size:30px;">
-        -Quantité camions <?= $gbm->mode ?> : <?= $gbcq2 ?>
-    -Quantité wagon <?= $gbm->mode ?> : <?= $gbwq2 ?>
+        -Quantité camions <?= $gbm->mode ?> : <?= $gbcq2 ?><br>
+    -Quantité wagon <?= $gbm->mode ?> : <?= $gbwq2 ?><br>
     -Nombre total de moyen de transport: <?= $gbm->gbc ?> camions et <?= $gbm->gbw ?> wagons </div>
         <?php endforeach; ?>
     <br><br>
