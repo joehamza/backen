@@ -24,9 +24,6 @@ $data8=array(
 'id8'=>$_POST['id8'],
 );
  
-$data9=array(
-'id9'=>$_POST['id9'],
-);
 //}
 //$rt= array();
 //$rt[]=$data;
@@ -42,6 +39,5 @@ file_put_contents('entot.json', $data2);
  file_put_contents('entit.json', $data6);
  file_put_contents('sortit.json', $data7);
  file_put_contents('gbmode.json', $data8);
- file_put_contents('heure.json', $data9);
 }
 ?>
