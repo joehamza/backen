@@ -85,6 +85,10 @@ ob_start();
     <th>Total</th><td align="center"><?= $sortot->c2 ?></td><td align="center"><?= $qf2 ?></td><td align="center"><?= $sortot->wa2 ?></td><td align="center"><?= $wf2 ?></td><td align="center">/</td><td align="center"><?= $tot2 ?></td>
     <?php endforeach; ?>
     </table>
+    <br>
+    <?php foreach ($gbmode as $gbm) : ?>
+        Total livraison <?= $gbm->mode ?> : <?=$gbm->gbcq ?> Nombre total de moyen de transport: <?= $gbm->gbc ?> camions et <?= $gbm->gbq ?> wagons
+        <?php endforeach; ?>
     <br><br>
     <table border="1" width="50%" style="border-collapse:collapse;font-size:25px">
     <tr><td colspan="7" align="center"><div style="font-size:30px;">*Stock comptable</div></td></tr>
