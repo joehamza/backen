@@ -14,7 +14,7 @@ ob_start();
     <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
        
-    <tr><td colspan="6" align="center"><div style="font-size:30px;">*Les entrées le <?=$et->Date ?> à $heure</div></td></tr>
+    <tr><td colspan="6" align="center"><div style="font-size:30px;">*Les entrées le <?=$et->Date ?> à <?=$heure?></div></td></tr>
     <?php endforeach; ?>
        
     <tr>
@@ -51,7 +51,7 @@ ob_start();
   <br><br>  
 <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
-    <tr><td colspan="7" align="center"><div style="font-size:30px;">*Enlèvements du silo portuaire le <?=$sortot->Date ?> à $heure</div></td></tr>
+    <tr><td colspan="7" align="center"><div style="font-size:30px;">*Enlèvements du silo portuaire le <?=$sortot->Date ?> à <?=$heure?></div></td></tr>
     <?php endforeach; ?>
     <tr>
         <th>Organisme</th>
@@ -87,7 +87,11 @@ ob_start();
     </table>
     <br>
     <?php foreach ($gbmode as $gbm) : ?>
-        Total livraison <?= $gbm->mode ?> : <?=$gbm->gbcq ?> Nombre total de moyen de transport: <?= $gbm->gbc ?> camions et <?= $gbm->gbq ?> wagons
+    $gbcq2=number_format($gbm->gbcq,2,',','');
+     $gbwq2=number_format($gbm->gbwq,2,',','');
+        -Quantité camions <?= $gbm->mode ?> : <?= $gbcq2 ?>
+    -Quantité wagon <?= $gbm->mode ?> : <?= $gbwq2 ?>
+    -Nombre total de moyen de transport: <?= $gbm->gbc ?> camions et <?= $gbm->gbw ?> wagons
         <?php endforeach; ?>
     <br><br>
     <table border="1" width="50%" style="border-collapse:collapse;font-size:25px">
