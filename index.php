@@ -89,7 +89,7 @@ ob_start();
     <?php foreach ($gbmode as $gbm) : ?>
   <?php  $gbcq2=number_format($gbm->gbcq,2,',','');
      $gbwq2=number_format($gbm->gbwq,2,',','');?>
-    <div style="font-size:15px;">
+    <div style="font-size:18px;">
         -Quantité camions <?= $gbm->mode ?> : <?= $gbcq2 ?><br>
     -Quantité wagon <?= $gbm->mode ?> : <?= $gbwq2 ?><br>
     -Nombre total de moyen de transport: <?= $gbm->gbc ?> camions et <?= $gbm->gbw ?> wagons </div>
