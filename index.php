@@ -8,7 +8,7 @@ $stock = json_decode(file_get_contents("essai/api/sortit.json"));
 ob_start();
 ?>
 <center>
-    <table border="1" width="100%" style="border-collapse:collapse;font-size:25px">
+    <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
     <tr><td colspan="6" align="center"><div style="font-size:30px;">*Les entrées le <?=$et->Date ?></div></td></tr>
     <?php endforeach; ?>
@@ -36,7 +36,7 @@ ob_start();
         <tr><th>Total</th><td align="center"><?= $ent->c4?></td><td align="center"><?= $fos4 ?></td><td align="center"><?= $qe4 ?></td><td align="center">/</td><td align="center">/</td></tr>
         <?php endforeach; ?>
         <?php foreach ($entreshif as $es) : ?>
-        <tr><th colspan="6" align="center"><em>Shift <?= $es->navire ?> / début : <?= $es->jour ?> <?= $es->shift ?> le <?= $es->date ?> (<?= $es->produit ?>)</em></th></tr>
+        <tr><th colspan="6" align="center"><em>Shift <?= $es->navire ?> / début : <?= $es->jour ?> <?= $es->shift ?> le <?= $es->date ?>  (<?= $es->produit ?>)</em></th></tr>
         <tr><th colspan='2'>Matin</th><th colspan='2'>Soir</th><th colspan='2'>Nuit</th></tr>
         <tr><th>Quantité</th><th>Camions</th><th>Quantité</th><th>Camions</th><th>Quantité</th><th>Camions</th></tr>
 <tr><td align='center'><?= $es->qm ?></td><td align='center'><?= $es->nm ?></td><td align='center'><?= $es->qs ?></td><td align='center'><?= $es->ns ?></td><td align='center'><?= $es->qn ?></td><td align='center'><?= $es->nn ?></td></tr>
@@ -44,7 +44,7 @@ ob_start();
         <?php endforeach; ?>
 </table>
   <br><br>  
-<table border="1" width="100%" style="border-collapse:collapse;font-size:25px">
+<table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
     <tr><td colspan="7" align="center"><div style="font-size:30px;">*Enlèvements du silo portuaire le <?=$sortot->Date ?></div></td></tr>
     <?php endforeach; ?>
