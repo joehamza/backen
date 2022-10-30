@@ -87,8 +87,8 @@ ob_start();
     </table>
     <br>
     <?php foreach ($gbmode as $gbm) : ?>
-    $gbcq2=number_format($gbm->gbcq,2,',','');
-     $gbwq2=number_format($gbm->gbwq,2,',','');
+  <?php  $gbcq2=number_format($gbm->gbcq,2,',','');
+     $gbwq2=number_format($gbm->gbwq,2,',','');?>
     <div style="font-size:30px;">
         -Quantité camions <?= $gbm->mode ?> : <?= $gbcq2 ?>
     -Quantité wagon <?= $gbm->mode ?> : <?= $gbwq2 ?>
