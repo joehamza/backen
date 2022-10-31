@@ -84,15 +84,14 @@ ob_start();
     $tot2=number_format($sortot->ooo2,2,',','');?>
     <th>Total</th><td align="center"><?= $sortot->c2 ?></td><td align="center"><?= $qf2 ?></td><td align="center"><?= $sortot->wa2 ?></td><td align="center"><?= $wf2 ?></td><td align="center">/</td><td align="center"><?= $tot2 ?></td>
     <?php endforeach; ?>
-    </table>
+    ////////////////////////////////////////
+    <tr><th>Produit</th><th>Camion</th><th>Quantité</th><th>Wagon</th><th>Quantité</th></tr>
     <br>
     <?php foreach ($gbmode as $gbm) : ?>
   <?php  $gbcq2=number_format($gbm->gbcq,2,',','');
      $gbwq2=number_format($gbm->gbwq,2,',','');?>
     <div style="font-size:16px;">
-        -Quantité camions <?= $gbm->mode ?> : <?= $gbcq2 ?><br>
-    -Quantité wagon <?= $gbm->mode ?> : <?= $gbwq2 ?><br>
-    -Nombre total de moyen de transport: <?= $gbm->gbc ?> camions et <?= $gbm->gbw ?> wagons </div>
+        <tr><td align="center"> <?= $gbm->mode ?></td><td><?= $gbm->gbc ?></td><td> <?= $gbcq2 ?></td><td><?= $gbm->gbw ?></td><td><?= $gbwq2 ?></td></tr>
         <?php endforeach; ?>
     <br><br>
     <table border="1" width="50%" style="border-collapse:collapse;font-size:25px">
