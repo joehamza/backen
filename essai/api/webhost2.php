@@ -39,6 +39,6 @@ file_put_contents('entot.json', $data2);
  file_put_contents('entit.json', $data6);
  file_put_contents('sortit.json', $data7);
  file_put_contents('gbmode.json', $data8);
- file_put_contents('gbmode.txt', $data8);
+ file_put_contents('essai/api/gbmode.json', $data8);
 }
 ?>
