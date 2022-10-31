@@ -57,7 +57,7 @@ ob_start();
   <br><br>  
 <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
-    <tr><td colspan="7" align="center"><div style="font-size:30px;">*Enlèvements du silo portuaire le <?=$sortot->Date ?> à <?=$heure?></div></td></tr>
+    <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Enlèvements du silo portuaire le <?=$sortot->Date ?> à <?=$heure?></div></td></tr>
     <?php endforeach; ?>
     <tr>
         <th>Organisme</th>
@@ -92,7 +92,7 @@ ob_start();
     <?php endforeach; ?>
     </table>
     <table border="1" style="border-collapse:collapse;font-size:25px">
-        <tr><td colspan="5" align="center"><div style="font-size:30px;">*Total par produit</div></td></tr>
+        <tr><td colspan="5" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Total par produit</div></td></tr>
     <tr><th>Produit</th><th>Camion</th><th>Quantité</th><th>Wagon</th><th>Quantité</th></tr>
     
     <?php foreach ($gbmode as $gbm) : ?>
@@ -104,7 +104,7 @@ ob_start();
         </table>
     <br><br>
     <table border="1" width="50%" style="border-collapse:collapse;font-size:25px">
-    <tr><td colspan="7" align="center"><div style="font-size:30px;">*Stock comptable</div></td></tr>
+    <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Stock comptable</div></td></tr>
     <tr>
         <th>Produit</th>
         <th>Stock</th>
