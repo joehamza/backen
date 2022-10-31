@@ -86,7 +86,7 @@ ob_start();
     <?php endforeach; ?>
     ////////////////////////////////////////
     <tr><th>Produit</th><th>Camion</th><th>Quantité</th><th>Wagon</th><th>Quantité</th></tr>
-    <br>
+    
     <?php foreach ($gbmode as $gbm) : ?>
   <?php  $gbcq2=number_format($gbm->gbcq,2,',','');
      $gbwq2=number_format($gbm->gbwq,2,',','');?>
