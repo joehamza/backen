@@ -11,7 +11,7 @@ width:0px;
 height:0px;
 margin:auto;
 overflow:hidden;
-top:40px;
+top:30px;
 
 align-items:center;justify-content:center;display:flex;
 transition:transform 0.5s 0.7s ,width 1.3s 0.7s,height 0.5s 0.2s,border-radius 0.5s 1.3s; }
@@ -28,6 +28,7 @@ transform:translateX(0);
 </style>
 <div class="h">
 <div class="aaa"><em class="txt">UCA DE SKIKDA</em></div></div></div>
+<br><br><br><br><br>
 <?php
 $entree = json_decode(file_get_contents("essai/api/sortot.json"));
 $entot = json_decode(file_get_contents("essai/api/sortie.json"));
