@@ -2,7 +2,7 @@
 body{
 background-color:#CCCC99;
 }
-    table{background-color:#bbb;}
+    table{background-color:#ccc;}
 </style>
 <?php
 $entree = json_decode(file_get_contents("essai/api/sortot.json"));
