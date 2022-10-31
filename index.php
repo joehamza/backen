@@ -93,6 +93,7 @@ ob_start();
     <div style="font-size:16px;">
         <tr><td align="center"> <?= $gbm->mode ?></td><td><?= $gbm->gbc ?></td><td> <?= $gbcq2 ?></td><td><?= $gbm->gbw ?></td><td><?= $gbwq2 ?></td></tr>
         <?php endforeach; ?>
+        </table>
     <br><br>
     <table border="1" width="50%" style="border-collapse:collapse;font-size:25px">
     <tr><td colspan="7" align="center"><div style="font-size:30px;">*Stock comptable</div></td></tr>
