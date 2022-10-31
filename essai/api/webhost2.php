@@ -39,7 +39,7 @@ file_put_contents('entot.json', $data2);
  file_put_contents('entit.json', $data6);
  file_put_contents('sortit.json', $data7);
  file_put_contents('gbmode.json', $data8);
- 
+}
  function get_data() {
         $name = $_POST['name'];
         $file_name='StudentsData'. '.json';
@@ -75,7 +75,7 @@ file_put_contents('entot.json', $data2);
     else {
         echo 'There is some error';                
     }
-}
+
        
-}
+
 ?>
