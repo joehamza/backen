@@ -85,7 +85,7 @@ ob_start();
     <th>Total</th><td align="center"><?= $sortot->c2 ?></td><td align="center"><?= $qf2 ?></td><td align="center"><?= $sortot->wa2 ?></td><td align="center"><?= $wf2 ?></td><td align="center">/</td><td align="center"><?= $tot2 ?></td>
     <?php endforeach; ?>
     </table>
-    <table border="1" width="40%" style="border-collapse:collapse;font-size:25px">
+    <table border="1" style="border-collapse:collapse;font-size:25px">
         <tr><td colspan="5" align="center"><div style="font-size:30px;">*Total par produit</div></td></tr>
     <tr><th>Produit</th><th>Camion</th><th>Quantité</th><th>Wagon</th><th>Quantité</th></tr>
     
