@@ -1,8 +1,8 @@
 <style>
 body{
-background-color:#CCCC99;
+background-color:#ddd99;
 }
-    table{background-color:#ccc;}
+    table{background-color:#ddd;}
 </style>
 <?php
 $entree = json_decode(file_get_contents("essai/api/sortot.json"));
