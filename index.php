@@ -1,6 +1,6 @@
 <style>
 body{
-background-color:#ddd99;
+background-color:#ddd88;
 }
     table{background-color:#ddd;}
 </style>
