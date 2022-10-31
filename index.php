@@ -3,6 +3,7 @@ body{
 background-color:#dddd99;
 }
     table{background-color:#ddd;}
+	.h{align-items:center;justify-content:center;display:flex;}
     .aaa{
 position:absolute;
 background-color:#9999FF;
@@ -20,9 +21,13 @@ transition:transform 0.5s 0.7s ,width 1.3s 0.7s,height 0.5s 0.2s,border-radius 0
 color:#fff;
 font-size:35px;
 transform:translateX(1000px);}
-
+.text2{
+transition:transform 0.5s 1.5s;
+transform:translateX(0);
+}
 </style>
-<div class="aaa"><em class="txt">UCA DE SKIKDA</em></div></div>
+<div class="h">
+<div class="aaa"><em class="txt">UCA DE SKIKDA</em></div></div></div>
 <?php
 $entree = json_decode(file_get_contents("essai/api/sortot.json"));
 $entot = json_decode(file_get_contents("essai/api/sortie.json"));
