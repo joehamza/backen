@@ -93,7 +93,7 @@ ob_start();
   <?php  $gbcq2=number_format($gbm->gbcq,2,',','');
      $gbwq2=number_format($gbm->gbwq,2,',','');?>
     <div style="font-size:16px;">
-        <tr><td align="center"> <?= $gbm->mode ?></td><td><?= $gbm->gbc ?></td><td> <?= $gbcq2 ?></td><td><?= $gbm->gbw ?></td><td><?= $gbwq2 ?></td></tr>
+        <tr><td align="center"> <?= $gbm->mode ?></td><td align="center"><?= $gbm->gbc ?></td><td align="center"> <?= $gbcq2 ?></td><td align="center"><?= $gbm->gbw ?></td><td align="center"><?= $gbwq2 ?></td></tr>
         <?php endforeach; ?>
         </table>
     <br><br>
