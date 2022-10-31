@@ -28,7 +28,8 @@ transform:translateX(0);
 </style>
 <div class="h">
 <div class="aaa"><em class="txt">UCA DE SKIKDA</em></div></div></div>
-<img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:100px;top:20px;" />
+<img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:100px;top:10px;" />
+<img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:900px;top:10px;" />
 <br><br><br><br><br>
 <?php
 $entree = json_decode(file_get_contents("essai/api/sortot.json"));
