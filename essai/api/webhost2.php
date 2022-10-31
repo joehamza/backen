@@ -39,5 +39,43 @@ file_put_contents('entot.json', $data2);
  file_put_contents('entit.json', $data6);
  file_put_contents('sortit.json', $data7);
  file_put_contents('gbmode.json', $data8);
+ 
+ function get_data() {
+        $name = $_POST['name'];
+        $file_name='StudentsData'. '.json';
+   
+        if(file_exists("$file_name")) { 
+            $current_data=file_get_contents("$file_name");
+            $array_data=json_decode($current_data, true);
+                               
+            $extra=array(
+                'id8' => $_POST['id8'],
+                
+            );
+            $array_data[]=$extra;
+            echo "file exist<br/>";
+            return json_encode($array_data);
+        }
+        else {
+            $datae=array();
+            $datae[]=array(
+                'id8' => $_POST['id8'],
+                
+            );
+            echo "file not exist<br/>";
+            return json_encode($datae);   
+        }
+    }
+  
+    $file_name='entree'. '.json';
+      
+    if(file_put_contents("$file_name", get_data())) {
+        echo 'success';
+    }                
+    else {
+        echo 'There is some error';                
+    }
+}
+       
 }
 ?>
