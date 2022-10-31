@@ -11,7 +11,7 @@ width:0px;
 height:0px;
 margin:auto;
 overflow:hidden;
-top:20px;
+top:15px;
 
 align-items:center;justify-content:center;display:flex;
 transition:transform 0.5s 0.7s ,width 1.3s 0.7s,height 0.5s 0.2s,border-radius 0.5s 1.3s; }
