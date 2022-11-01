@@ -1,5 +1,4 @@
 <?php
-header("refresh:1");
 $entree = json_decode(file_get_contents("essai/api/sortot.json"));
 $entot = json_decode(file_get_contents("essai/api/sortie.json"));
 $entreshif = json_decode(file_get_contents("essai/api/entit.json"));
