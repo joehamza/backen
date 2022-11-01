@@ -87,9 +87,12 @@ ob_start();
 </table>
   <br><br>
 	<?php } ?>
+	<?php foreach ($sortietot as $sortot) : ?>
+	<?php endforeach; ?>
+	<?php if($sortot->Date!=''){ ?>
 <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
-	<?php if($sortot->Date!='') ?>
+	
     <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Enlèvements du silo portuaire le <?=$sortot->Date ?> à <?=$heure?></div></td></tr>
     <?php endforeach; ?>
     <tr>
@@ -137,6 +140,7 @@ ob_start();
 
         </table>
     <br><br>
+	<?php } ?>
     <table border="1" width="50%" style="border-collapse:collapse;font-size:25px">
     <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Stock comptable</div></td></tr>
     <tr>
