@@ -87,7 +87,7 @@ ob_start();
 </table>
   <br><br>
 	<?php foreach ($sortietot as $sortott) : ?>
-	<?php if($sortott->Date!='') ?>
+	<?php if($sortott->Date!=''){ ?>
 <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
 	
@@ -135,7 +135,7 @@ ob_start();
     <div style="font-size:16px;">
         <tr><td align="center"> <?= $gbm->mode ?></td><td align="center"><?= $gbm->gbc ?></td><td align="center"> <?= $gbcq2 ?></td><td align="center"><?= $gbm->gbw ?></td><td align="center"><?= $gbwq2 ?></td></tr>
         <?php endforeach; ?>
-	    <?php endforeach; ?>
+	    <?php endforeach; }?>
         </table>
     <br><br>
     <table border="1" width="50%" style="border-collapse:collapse;font-size:25px">
