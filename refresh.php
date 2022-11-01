@@ -1,36 +1,4 @@
-<style>
-body{
-background-color:#dddd99;
-}
-    table{background-color:#ddd;}
-	.h{align-items:center;justify-content:center;display:flex;}
-    .aaa{
-position:absolute;
-background-color:#9999FF;
-width:0px;
-height:0px;
-margin:auto;
-overflow:hidden;
-top:7px;
 
-align-items:center;justify-content:center;display:flex;
-transition:transform 0.5s 0.7s ,width 1.3s 0.7s,height 0.5s 0.2s,border-radius 0.5s 1.3s; }
-/*transition:transform 0.5s 0.7s ,width 0.5s 0.4s,height 0.5s 0.2s;}*/
-
-.txt{
-color:#fff;
-font-size:35px;
-transform:translateX(1000px);}
-.text2{
-transition:transform 0.5s 1.5s;
-transform:translateX(0);
-}
-</style>
-<div class="h">
-<div class="aaa"><em class="txt">UCA DE SKIKDA</em></div></div></div>
-<img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:100px;top:7px;" />
-<br><br><br><br><br>
-<?php
 $entree = json_decode(file_get_contents("essai/api/sortot.json"));
 $entot = json_decode(file_get_contents("essai/api/sortie.json"));
 $entreshif = json_decode(file_get_contents("essai/api/entit.json"));
@@ -42,35 +10,24 @@ date_default_timezone_set('Africa/Algiers');
     $heure =date('H:i');
 ob_start();
 ?>
-<center>
-    <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
        
-    <tr><td colspan="6" align="center"><div style="font-size:30px;background-color:#333;color:#eee">*Les entrées le <?=$et->Date ?> à <?=$heure?></div></td></tr>
+    <?=$et->Date ?> à <?=$heure?>
     <?php endforeach; ?>
        
-    <tr>
-        <th>Navire</th>
-        <th>NBR</th>
-        <th>Fosse</th>
-        <th>Débarqué</th>
-        <th>T/Débarqué</th>
-        <th>R/à bord</th>
-        
-    </tr>
-    <?php foreach ($entree as $ent) : ?>    
-     <tr>
-            <td align="center"><?= $ent->client ?></td>
-            <td align="center"><?= $ent->nbr ?></td>
-            <td align="center"><?= $ent->fos ?></td>
-            <td align="center"><?= $ent->quantite ?></td>
-            <td align="center"><?= $ent->deb ?></td>
-         <td align="center"><?= $ent->rest ?></td></tr>
+        <?php foreach ($entree as $ent) : ?>    
+     
+            <?= $ent->client ?>
+            <?= $ent->nbr ?>
+            <?= $ent->fos ?>
+            <?= $ent->quantite ?>
+            <?= $ent->deb ?>
+         <?= $ent->rest ?>
     <?php endforeach; ?>
        <?php foreach ($entot as $ent) : ?>
        <?php $qe4=number_format($ent->ooo4,2,',','');
         $fos4=number_format($ent->fos4,2,',','');?>
-        <tr><th>Total</th><td align="center"><?= $ent->c4?></td><td align="center"><?= $fos4 ?></td><td align="center"><?= $qe4 ?></td><td align="center">/</td><td align="center">/</td></tr>
+        <?= $ent->c4?> <?= $fos4 ?><?= $qe4 ?>
         <?php endforeach; ?>
         <?php foreach ($entreshif as $es) : ?>
         <tr><th colspan="6" align="center"><em>Shift <?= $es->navire ?> / début : <?= $es->jour ?> <?= $es->shift ?> le <?= $es->date ?>  (<?= $es->produit ?>)</em></th></tr>
