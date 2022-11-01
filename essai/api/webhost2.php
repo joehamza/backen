@@ -33,12 +33,12 @@ $data8=array(
 //header("Content-Type: application/json");
  // echo"$b";
 
- file_put_contents('entree.json', $data);
-file_put_contents('entot.json', $data2);
- file_put_contents('sortie.json', $data4);
- file_put_contents('sortot.json', $data5);
- file_put_contents('entit.json', $data6);
- file_put_contents('sortit.json', $data7);
- file_put_contents('gbmode.json', $data8);
+ file_put_contents('entree.txt', $data);
+file_put_contents('entot.txt', $data2);
+ file_put_contents('sortie.txt', $data4);
+ file_put_contents('sortot.txt', $data5);
+ file_put_contents('entit.txt', $data6);
+ file_put_contents('sortit.txt', $data7);
+ file_put_contents('gbmode.txt', $data8);
 }
 ?>
