@@ -31,15 +31,7 @@ transform:translateX(0);
 <img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:100px;top:7px;" />
 <br><br><br><br><br>
 <?php
-$entree = json_decode(file_get_contents("essai/api/sortot.json"));
-$entot = json_decode(file_get_contents("essai/api/sortie.json"));
-$entreshif = json_decode(file_get_contents("essai/api/entit.json"));
-$sortie = json_decode(file_get_contents("essai/api/entree.json"));
-$sortietot = json_decode(file_get_contents("essai/api/entot.json"));
-$stock = json_decode(file_get_contents("essai/api/sortit.json"));
-$gbmode = json_decode(file_get_contents("essai/api/gbmode.json"));
-date_default_timezone_set('Africa/Algiers');
-    $heure =date('H:i');
+require('refresh.php');
 ob_start();
 ?>
 <center>
@@ -168,4 +160,3 @@ tx.classList.remove("text2");
 	setTimeout("f2()",10500);
 }
 </script>
- 
