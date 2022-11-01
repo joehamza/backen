@@ -86,11 +86,10 @@ ob_start();
 	    <?php endforeach; ?>
 </table>
   <br><br>
-	<?php foreach ($sortietot as $sortot) : ?>
-	<?php if($sortot->Date!='') ?>
+	
 <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
-	
+	<?php if($sortot->Date!='') ?>
     <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Enlèvements du silo portuaire le <?=$sortot->Date ?> à <?=$heure?></div></td></tr>
     <?php endforeach; ?>
     <tr>
@@ -135,7 +134,7 @@ ob_start();
     <div style="font-size:16px;">
         <tr><td align="center"> <?= $gbm->mode ?></td><td align="center"><?= $gbm->gbc ?></td><td align="center"> <?= $gbcq2 ?></td><td align="center"><?= $gbm->gbw ?></td><td align="center"><?= $gbwq2 ?></td></tr>
         <?php endforeach; ?>
-	    <?php endforeach; ?>
+
         </table>
     <br><br>
     <table border="1" width="50%" style="border-collapse:collapse;font-size:25px">
