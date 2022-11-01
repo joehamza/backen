@@ -47,7 +47,7 @@ ob_start();
 <center>
 	<?php foreach ($entot as $ett) : ?>
 	<?php endforeach; ?>
-	<?php if($ett->Date!='') ?>
+	<?php if($ett->Date!=''){ ?>
     <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
      
@@ -86,7 +86,7 @@ ob_start();
         <?php endforeach; ?>
 </table>
   <br><br>
-	
+	<?php } ?>
 <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
 	<?php if($sortot->Date!='') ?>
