@@ -45,9 +45,8 @@ date_default_timezone_set('Africa/Algiers');
 ob_start();
 ?>
 <center>
-	<?php foreach ($entot as $et) : ?>
-	<?php endforeach; ?>
-	<?php if($et->Date!='') ?>
+	<?php foreach ($entot as $ett) : ?>
+	<?php if($ett->Date!='') ?>
     <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
      
@@ -84,11 +83,11 @@ ob_start();
 <tr><td align='center'><?= $es->qm ?></td><td align='center'><?= $es->nm ?></td><td align='center'><?= $es->qs ?></td><td align='center'><?= $es->ns ?></td><td align='center'><?= $es->qn ?></td><td align='center'><?= $es->nn ?></td></tr>
         <tr><td colspan='6' align='center'>Nombre de séjour après le début de débarquement : <?= $es->apre ?><br>Nombre de jours de débarquement : <?= $es->njour ?><br>Nombre de jours neant : <?= $es->neant ?></td></tr>
         <?php endforeach; ?>
+	    <?php endforeach; ?>
 </table>
   <br><br>
-	<?php foreach ($sortietot as $sortot) : ?>
-	<?php endforeach; ?>
-	<?php if($sortot->Date!='') ?>
+	<?php foreach ($sortietot as $sortott) : ?>
+	<?php if($sortott->Date!='') ?>
 <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
 	
@@ -136,6 +135,7 @@ ob_start();
     <div style="font-size:16px;">
         <tr><td align="center"> <?= $gbm->mode ?></td><td align="center"><?= $gbm->gbc ?></td><td align="center"> <?= $gbcq2 ?></td><td align="center"><?= $gbm->gbw ?></td><td align="center"><?= $gbwq2 ?></td></tr>
         <?php endforeach; ?>
+	    <?php endforeach; ?>
         </table>
     <br><br>
     <table border="1" width="50%" style="border-collapse:collapse;font-size:25px">
