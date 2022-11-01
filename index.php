@@ -160,7 +160,7 @@ tx.classList.remove("text2");
 	setTimeout("f2()",10500);
 }
 </script>
-	    <script src="jquery.js"></script>
+	    <script type="text/javascript" src="jquery.js"></script>
 	    <script>
 setInterval('loadm()',1000);
 function loadm(){
