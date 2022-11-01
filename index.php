@@ -31,7 +31,7 @@ transform:translateX(0);
 <img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:100px;top:7px;" />
 <br><br><br><br><br>
 <?php
-//require('refresh.php');
+require('refresh.php');
 ob_start();
 ?>
 <center>
