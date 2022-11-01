@@ -45,9 +45,12 @@ date_default_timezone_set('Africa/Algiers');
 ob_start();
 ?>
 <center>
+	<?php foreach ($entot as $et) : ?>
+	<?php endforeach; ?>
+	<?php if($et->Date!='') ?>
     <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
-       
+     
     <tr><td colspan="6" align="center"><div style="font-size:30px;background-color:#333;color:#eee">*Les entrées le <?=$et->Date ?> à <?=$heure?></div></td></tr>
     <?php endforeach; ?>
        
@@ -82,9 +85,13 @@ ob_start();
         <tr><td colspan='6' align='center'>Nombre de séjour après le début de débarquement : <?= $es->apre ?><br>Nombre de jours de débarquement : <?= $es->njour ?><br>Nombre de jours neant : <?= $es->neant ?></td></tr>
         <?php endforeach; ?>
 </table>
-  <br><br>  
+  <br><br>
+	<?php foreach ($sortietot as $sortot) : ?>
+	<?php endforeach; ?>
+	<?php if($sortot->Date!='') ?>
 <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
+	
     <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Enlèvements du silo portuaire le <?=$sortot->Date ?> à <?=$heure?></div></td></tr>
     <?php endforeach; ?>
     <tr>
