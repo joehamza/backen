@@ -46,6 +46,7 @@ ob_start();
 ?>
 <center>
 	<?php foreach ($entot as $ett) : ?>
+	<?php endforeach; ?>
 	<?php if($ett->Date!='') ?>
     <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
@@ -83,7 +84,6 @@ ob_start();
 <tr><td align='center'><?= $es->qm ?></td><td align='center'><?= $es->nm ?></td><td align='center'><?= $es->qs ?></td><td align='center'><?= $es->ns ?></td><td align='center'><?= $es->qn ?></td><td align='center'><?= $es->nn ?></td></tr>
         <tr><td colspan='6' align='center'>Nombre de séjour après le début de débarquement : <?= $es->apre ?><br>Nombre de jours de débarquement : <?= $es->njour ?><br>Nombre de jours neant : <?= $es->neant ?></td></tr>
         <?php endforeach; ?>
-	    <?php endforeach; ?>
 </table>
   <br><br>
 	
