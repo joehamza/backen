@@ -24,7 +24,7 @@ $data8=array(
 'id8'=>$_POST['id8'],
 );
  
-//}
+}
 //$rt= array();
 //$rt[]=$data;
 //$b=json_encode($rt);
@@ -39,6 +39,4 @@ file_put_contents('entot.json', $data2);
  file_put_contents('entit.json', $data6);
  file_put_contents('sortit.json', $data7);
  file_put_contents('gbmode.json', $data8);
-}
-
 ?>
