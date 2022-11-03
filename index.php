@@ -162,7 +162,7 @@ ob_start();
 	    <script>
 setInterval('loadm()',1000);
 function loadm(){
-$("#message").load('index.php');}
+$("#message").load('essai/api/webhost2.php');}
 </script>
     <script>
 var aa=document.querySelector(".aaa");
