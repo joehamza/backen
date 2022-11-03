@@ -52,7 +52,7 @@ ob_start();
     <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
      
-    <tr><td colspan="6" align="center"><div style="font-size:30px;background-color:#333;color:#eee">*Les entrées le <?=$et->Date ?> à <?=$heure?></div></td></tr>
+    <tr><td colspan="6" align="center"><div style="font-size:30px;background-color:#333;color:#eee;padding:5px;">*Les entrées le <?=$et->Date ?> à <?=$heure?></div></td></tr>
     <?php endforeach; ?>
        
     <tr>
