@@ -42,7 +42,7 @@ $sortie = json_decode(file_get_contents("essai/api/entree.txt"));
 $sortietot = json_decode(file_get_contents("essai/api/entot.txt"));
 $stock = json_decode(file_get_contents("essai/api/sortit.txt"));
 $gbmode = json_decode(file_get_contents("essai/api/gbmode.txt"));
- echo"</div>";
+ 
 date_default_timezone_set('Africa/Algiers');
     $heure =date('H:i');
 ob_start();
@@ -162,6 +162,7 @@ ob_start();
     </table>
 	    <br><br>
 	    <?php } ?>
+	    echo"</div>";
     </center>
 	    <script src="jquery.js"></script>
 	    <script>
