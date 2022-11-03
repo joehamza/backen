@@ -34,6 +34,7 @@ transform:translateX(0);
 <img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:100px;top:7px;" />
 <br><br><br><br><br>
 <?php
+echo"<div id="message">";
 $entree = json_decode(file_get_contents("essai/api/sortot.txt"));
 $entot = json_decode(file_get_contents("essai/api/sortie.txt"));
 $entreshif = json_decode(file_get_contents("essai/api/entit.txt"));
@@ -41,6 +42,7 @@ $sortie = json_decode(file_get_contents("essai/api/entree.txt"));
 $sortietot = json_decode(file_get_contents("essai/api/entot.txt"));
 $stock = json_decode(file_get_contents("essai/api/sortit.txt"));
 $gbmode = json_decode(file_get_contents("essai/api/gbmode.txt"));
+ echo"</div>";
 date_default_timezone_set('Africa/Algiers');
     $heure =date('H:i');
 ob_start();
@@ -160,7 +162,7 @@ ob_start();
 	    <script>
 setInterval('loadm()',1000);
 function loadm(){
-$("#message").load('essai/api/webhost2.php');}
+$("#message").load('index.php');}
 </script>
     <script>
 var aa=document.querySelector(".aaa");
