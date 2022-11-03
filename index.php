@@ -96,13 +96,13 @@ ob_start();
     <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Enlèvements du silo portuaire le <?=$sortot->Date ?> à <?=$heure?></div></td></tr>
     <?php endforeach; ?>
     <tr>
-        <th>Organisme</th>
-	    <th>Produit</th>
+	    <th>Organisme</th>
         <th>Camion</th>
         <th>Quantité</th>
         <th>Wagon</th>
         <th>Quantité</th>
         <th>Total</th>
+	    <th>Produit</th>
     </tr>
     <?php foreach ($sortie as $sort) : ?>
     <?php 
@@ -112,12 +112,12 @@ ob_start();
     
         <tr>
             <td align="center"><?= $sort->client ?></td>
-	    <td align="center"><?= $sort->mode ?></td>
             <td align="center"><?= $sort->c ?></td>
             <td align="center"><?= $qf ?></td>
             <td align="center"><?= $sort->wa ?></td>
             <td align="center"><?= $wf ?></td>
-            <td align="center"><?= $tot ?></td></tr>
+            <td align="center"><?= $tot ?></td>
+	    <td align="center"><?= $sort->mode ?></td></tr>
     <?php endforeach; ?>
     <?php foreach ($sortietot as $sortot) : ?>
     <?php 
