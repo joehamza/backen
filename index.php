@@ -124,10 +124,10 @@ ob_start();
     $qf2=number_format($sortot->q2,2,',','');
     $wf2=number_format($sortot->wag2,2,',','');
     $tot2=number_format($sortot->ooo2,2,',','');?>
-    <th>Total</th><th><?= $sortot->c2 ?></th><th><?= $qf2 ?></th><th><?= $sortot->wa2 ?></th><th><?= $wf2 ?></th><th>/</th><th><?= $tot2 ?></th>
+    <th>Total</th><th><?= $sortot->c2 ?></th><th><?= $qf2 ?></th><th><?= $sortot->wa2 ?></th><th><?= $wf2 ?></th><th><?= $tot2 ?></th><th>/</th></tr>
     <?php endforeach; ?>
     </table>
-    <table border="1" width="70%" style="border-collapse:collapse;font-size:25px">
+    <table border="1" style="border-collapse:collapse;font-size:25px">
         <tr><td colspan="5" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Total par produit</div></td></tr>
     <tr><th>Produit</th><th>Camion</th><th>Quantité</th><th>Wagon</th><th>Quantité</th></tr>
     
