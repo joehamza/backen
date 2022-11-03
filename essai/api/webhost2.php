@@ -32,7 +32,7 @@ $data8=array(
 //header("Access-Control-Allow-Origin: *");
 //header("Content-Type: application/json");
  // echo"$b";
-
+echo"<div id="message">";
  file_put_contents('entree.txt', $data);
 file_put_contents('entot.txt', $data2);
  file_put_contents('sortie.txt', $data4);
@@ -40,5 +40,6 @@ file_put_contents('entot.txt', $data2);
  file_put_contents('entit.txt', $data6);
  file_put_contents('sortit.txt', $data7);
  file_put_contents('gbmode.txt', $data8);
+ echo"</div>";
 }
 ?>
