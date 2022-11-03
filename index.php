@@ -48,7 +48,7 @@ ob_start();
 	<?php foreach ($entot as $ett) : ?>
 	<?php endforeach; ?>
 	<?php if($ett->Date!=''){ ?>
-    <table border="1" width="70%" style="border-collapse:collapse;font-size:25px">
+    <table border="1" width="90%" style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
      
     <tr><td colspan="6" align="center"><div style="font-size:30px;background-color:#333;color:#eee">*Les entrées le <?=$et->Date ?> à <?=$heure?></div></td></tr>
@@ -90,7 +90,7 @@ ob_start();
 	<?php foreach ($sortietot as $sortot) : ?>
 	<?php endforeach; ?>
 	<?php if($sortot->Date!=''){ ?>
-<table border="1" width="70%" style="border-collapse:collapse;font-size:25px">
+<table border="1" width="90%" style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
 	
     <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Enlèvements du silo portuaire le <?=$sortot->Date ?> à <?=$heure?></div></td></tr>
