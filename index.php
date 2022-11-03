@@ -6,6 +6,7 @@ background-color:#dddd99;
 }
     table{background-color:#ddd;}
 	.h{align-items:center;justify-content:center;display:flex;}
+	th,td{padding:5px;}
     .aaa{
 position:absolute;
 background-color:#9999FF;
