@@ -144,6 +144,9 @@ ob_start();
         </table>
     <br><br>
 	<?php } ?>
+	<?php foreach ($stock as $st) : ?>
+	<?php endforeach; ?>
+	<?php if($st->stock!=''){ ?>
     <table border="1" width="50%" style="border-collapse:collapse;font-size:25px">
     <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Stock comptable</div></td></tr>
     <tr>
@@ -157,12 +160,14 @@ ob_start();
             <td align="center"><?= $st->stock ?></td>
     <?php endforeach; ?>
     </table>
+	    <br><br>
+	    <?php } ?>
     </center>
 	    <script src="jquery.js"></script>
 	    <script>
 setInterval('loadm()',1000);
 function loadm(){
-$("#message").load('essai/api/webhost2.php');}
+$("#message").load('index.php');}
 </script>
     <script>
 var aa=document.querySelector(".aaa");
