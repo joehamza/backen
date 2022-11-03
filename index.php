@@ -44,7 +44,7 @@ $stock = json_decode(file_get_contents("essai/api/sortit.txt"));
 $gbmode = json_decode(file_get_contents("essai/api/gbmode.txt"));
  
 date_default_timezone_set('Africa/Algiers');
-    $heure =date('H:i');
+    $heure =date('H:i:s');
 ob_start();
 ?>
 <center>
