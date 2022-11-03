@@ -156,6 +156,12 @@ ob_start();
     <?php endforeach; ?>
     </table>
     </center>
+	    <script src="jquery.js"></script>
+	    <script>
+setInterval('loadm()',1000);
+function loadm(){
+$("#message").load('essai/api/webhost2.php');}
+</script>
     <script>
 var aa=document.querySelector(".aaa");
 var tx=document.querySelector(".txt");
