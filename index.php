@@ -167,7 +167,7 @@ ob_start();
 	    <script>
 setInterval('loadm()',1000);
 function loadm(){
-$("#message").load('index.php');}
+$(document).load('index.php');}
 </script>
     <script>
 var aa=document.querySelector(".aaa");
