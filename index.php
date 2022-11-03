@@ -97,11 +97,11 @@ ob_start();
     <?php endforeach; ?>
     <tr>
         <th>Organisme</th>
+	    <th>Produit</th>
         <th>Camion</th>
         <th>Quantité</th>
         <th>Wagon</th>
         <th>Quantité</th>
-        <th>Produit</th>
         <th>Total</th>
     </tr>
     <?php foreach ($sortie as $sort) : ?>
@@ -112,11 +112,11 @@ ob_start();
     
         <tr>
             <td align="center"><?= $sort->client ?></td>
+	    <td align="center"><?= $sort->mode ?></td>
             <td align="center"><?= $sort->c ?></td>
             <td align="center"><?= $qf ?></td>
             <td align="center"><?= $sort->wa ?></td>
             <td align="center"><?= $wf ?></td>
-            <td align="center"><?= $sort->mode ?></td>
             <td align="center"><?= $tot ?></td></tr>
     <?php endforeach; ?>
     <?php foreach ($sortietot as $sortot) : ?>
