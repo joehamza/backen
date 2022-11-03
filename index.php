@@ -162,13 +162,13 @@ ob_start();
     </table>
 	    <br><br>
 	    <?php } ?>
-	    echo"</div>";
+	   </div>
     </center>
 	    <script src="jquery.js"></script>
 	    <script>
 setInterval('loadm()',1000);
 function loadm(){
-$(window).load('index.php');}
+$("#message").load('index.php');}
 </script>
     <script>
 var aa=document.querySelector(".aaa");
