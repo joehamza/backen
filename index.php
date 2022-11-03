@@ -75,7 +75,7 @@ ob_start();
        <?php foreach ($entot as $ent) : ?>
        <?php $qe4=number_format($ent->ooo4,2,',','');
         $fos4=number_format($ent->fos4,2,',','');?>
-        <tr><th>Total</th><td align="center"><?= $ent->c4?></td><td align="center"><?= $fos4 ?></td><td align="center"><?= $qe4 ?></td><td align="center">/</td><td align="center">/</td></tr>
+        <tr><th>Total</th><th><?= $ent->c4?></th><th><?= $fos4 ?></th><th><?= $qe4 ?></th><th>/</th><th>/</th></tr>
         <?php endforeach; ?>
         <?php foreach ($entreshif as $es) : ?>
         <tr><th colspan="6" align="center"><em>Shift <?= $es->navire ?> / début : <?= $es->jour ?> <?= $es->shift ?> le <?= $es->date ?>  (<?= $es->produit ?>)</em></th></tr>
@@ -124,7 +124,7 @@ ob_start();
     $qf2=number_format($sortot->q2,2,',','');
     $wf2=number_format($sortot->wag2,2,',','');
     $tot2=number_format($sortot->ooo2,2,',','');?>
-    <th>Total</th><td align="center"><?= $sortot->c2 ?></td><td align="center"><?= $qf2 ?></td><td align="center"><?= $sortot->wa2 ?></td><td align="center"><?= $wf2 ?></td><td align="center">/</td><td align="center"><?= $tot2 ?></td>
+    <th>Total</th><th><?= $sortot->c2 ?></th><th><?= $qf2 ?></th><th><?= $sortot->wa2 ?></th><th><?= $wf2 ?></th><th>/</th><th><?= $tot2 ?></th>
     <?php endforeach; ?>
     </table>
     <table border="1" style="border-collapse:collapse;font-size:25px">
