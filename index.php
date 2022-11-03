@@ -31,7 +31,6 @@ transform:translateX(0);
 <div class="h">
 <div class="aaa"><em class="txt">UCA DE SKIKDA</em></div></div></div>
 <img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:100px;top:7px;" />
-<img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:1000px;top:7px;" />
 <br><br><br><br><br>
 <?php
 $entree = json_decode(file_get_contents("essai/api/sortot.txt"));
@@ -49,7 +48,7 @@ ob_start();
 	<?php foreach ($entot as $ett) : ?>
 	<?php endforeach; ?>
 	<?php if($ett->Date!=''){ ?>
-    <table border="1" width="90%" style="border-collapse:collapse;font-size:25px">
+    <table border="1" width="95%" style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
      
     <tr><td colspan="6" align="center"><div style="font-size:30px;background-color:#333;color:#eee">*Les entrées le <?=$et->Date ?> à <?=$heure?></div></td></tr>
@@ -91,7 +90,7 @@ ob_start();
 	<?php foreach ($sortietot as $sortot) : ?>
 	<?php endforeach; ?>
 	<?php if($sortot->Date!=''){ ?>
-<table border="1" width="90%" style="border-collapse:collapse;font-size:25px">
+<table border="1" width="95%" style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
 	
     <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Enlèvements du silo portuaire le <?=$sortot->Date ?> à <?=$heure?></div></td></tr>
