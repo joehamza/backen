@@ -35,7 +35,7 @@ $data8=array(
  file_put_contents('entree.txt', $data);
 file_put_contents('entot.txt', $data2);
  file_put_contents('sortie.txt', $data4);
- file_put_contents('essai/api/sortot.txt', $data5);
+ file_put_contents('sortot.txt', $data5);
  file_put_contents('entit.txt', $data6);
  file_put_contents('sortit.txt', $data7);
  file_put_contents('gbmode.txt', $data8);
