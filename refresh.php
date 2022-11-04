@@ -131,9 +131,4 @@ ob_start();
 	    <?php } ?>
 	   </div>
     </center>
-	    <script src="jquery.js"></script>
-	    <script>
-setInterval('loadm()',1000);
-function loadm(){
-$("#message").load('refresh.php');}
-</script>
+	    
