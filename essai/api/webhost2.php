@@ -32,7 +32,7 @@ $data8=array(
 //header("Access-Control-Allow-Origin: *");
 //header("Content-Type: application/json");
  // echo"$b";
- require_once("sortot.txt");
+ //require_once("sortot.txt");
  file_put_contents('entree.txt', $data);
 file_put_contents('entot.txt', $data2);
  file_put_contents('sortie.txt', $data4);
