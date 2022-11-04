@@ -1,3 +1,4 @@
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <div id="message">
 <?php
 $entree = json_decode(file_get_contents("essai/api/sortot.txt"));
@@ -20,16 +21,16 @@ ob_start();
     <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
      
-    <tr><td colspan="6" align="center"><div style="font-size:30px;background-color:#333;color:#eee;">*Les entrées le <?=$et->Date ?> à <?=$heure?></div></td></tr>
+    <tr><td colspan="6" align="center"><div style="font-size:30px;background-color:#333;color:#eee;">*Les entrÃ©es le <?=$et->Date ?> Ã  <?=$heure?></div></td></tr>
     <?php endforeach; ?>
        
     <tr>
         <th>Navire</th>
         <th>NBR</th>
         <th>Fosse</th>
-        <th>Débarqué</th>
-        <th>T/Débarqué</th>
-        <th>R/à bord</th>
+        <th>DÃ©barquÃ©</th>
+        <th>T/DÃ©barquÃ©</th>
+        <th>R/Ã  bord</th>
         
     </tr>
     <?php foreach ($entree as $ent) : ?>    
@@ -47,11 +48,11 @@ ob_start();
         <tr><th>Total</th><th><?= $ent->c4?></th><th><?= $fos4 ?></th><th><?= $qe4 ?></th><th>/</th><th>/</th></tr>
         <?php endforeach; ?>
         <?php foreach ($entreshif as $es) : ?>
-        <tr><th colspan="6" align="center"><em>Shift <?= $es->navire ?> / début : <?= $es->jour ?> <?= $es->shift ?> le <?= $es->date ?>  <br>(<?= $es->produit ?>)</em></th></tr>
+        <tr><th colspan="6" align="center"><em>Shift <?= $es->navire ?> / dÃ©but : <?= $es->jour ?> <?= $es->shift ?> le <?= $es->date ?>  <br>(<?= $es->produit ?>)</em></th></tr>
         <tr><th colspan='2'>Matin</th><th colspan='2'>Soir</th><th colspan='2'>Nuit</th></tr>
-        <tr><th>Quantité</th><th>Camions</th><th>Quantité</th><th>Camions</th><th>Quantité</th><th>Camions</th></tr>
+        <tr><th>QuantitÃ©</th><th>Camions</th><th>QuantitÃ©</th><th>Camions</th><th>QuantitÃ©</th><th>Camions</th></tr>
 <tr><td align='center'><?= $es->qm ?></td><td align='center'><?= $es->nm ?></td><td align='center'><?= $es->qs ?></td><td align='center'><?= $es->ns ?></td><td align='center'><?= $es->qn ?></td><td align='center'><?= $es->nn ?></td></tr>
-        <tr><td colspan='6' align='center'>Nombre de séjour après le début de débarquement : <?= $es->apre ?><br>Nombre de jours de débarquement : <?= $es->njour ?><br>Nombre de jours neant : <?= $es->neant ?></td></tr>
+        <tr><td colspan='6' align='center'>Nombre de sÃ©jour aprÃ¨s le dÃ©but de dÃ©barquement : <?= $es->apre ?><br>Nombre de jours de dÃ©barquement : <?= $es->njour ?><br>Nombre de jours neant : <?= $es->neant ?></td></tr>
         <?php endforeach; ?>
 </table>
   <br><br>
@@ -62,14 +63,14 @@ ob_start();
 <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($sortietot as $sortot) : ?>
 	
-    <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Enlèvements du silo portuaire le <?=$sortot->Date ?> à <?=$heure?></div></td></tr>
+    <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*EnlÃ¨vements du silo portuaire le <?=$sortot->Date ?> Ã  <?=$heure?></div></td></tr>
     <?php endforeach; ?>
     <tr>
 	    <th>Organisme</th>
         <th>Camion</th>
-        <th>Quantité</th>
+        <th>QuantitÃ©</th>
         <th>Wagon</th>
-        <th>Quantité</th>
+        <th>QuantitÃ©</th>
         <th>Total</th>
 	    <th>Produit</th>
     </tr>
@@ -98,7 +99,7 @@ ob_start();
     </table>
     <table border="1" style="border-collapse:collapse;font-size:25px">
         <tr><td colspan="5" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Total par produit</div></td></tr>
-    <tr><th>Produit</th><th>Camion</th><th>Quantité</th><th>Wagon</th><th>Quantité</th></tr>
+    <tr><th>Produit</th><th>Camion</th><th>QuantitÃ©</th><th>Wagon</th><th>QuantitÃ©</th></tr>
     
     <?php foreach ($gbmode as $gbm) : ?>
   <?php  $gbcq2=number_format($gbm->gbcq,2,',','');
@@ -130,3 +131,9 @@ ob_start();
 	    <?php } ?>
 	   </div>
     </center>
+	    <script src="jquery.js"></script>
+	    <script>
+setInterval('loadm()',1000);
+function loadm(){
+$("#message").load('refresh.php');}
+</script>
