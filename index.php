@@ -38,7 +38,7 @@ transform:translateX(0);
 	    <script>
 setInterval('loadm()',5000);
 function loadm(){
-$("#message").load('index.php');}
+$("#message").load('refresh.php');}
 </script>
     <script>
 var aa=document.querySelector(".aaa");
