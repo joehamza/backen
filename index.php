@@ -167,7 +167,7 @@ ob_start();
     </center>
 	    <script src="jquery.js"></script>
 	    <script>
-setInterval('loadm()',1000);
+setInterval('loadm()',5000);
 function loadm(){
 $("#message").load('index.php');}
 </script>
