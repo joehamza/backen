@@ -14,7 +14,7 @@ width:0px;
 height:0px;
 margin:auto;
 overflow:hidden;
-top:7px;
+top:9px;
 
 align-items:center;justify-content:center;display:flex;
 transition:transform 0.5s 0.7s ,width 1.3s 0.7s,height 0.5s 0.2s,border-radius 0.5s 1.3s; }
@@ -31,7 +31,7 @@ transform:translateX(0);
 </style>
 <div class="h">
 <div class="aaa"><em class="txt">UCA DE SKIKDA</em></div></div></div>
-<img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:100px;top:7px;" />
+<img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:100px;top:9px;" />
 <br><br><br>
 <?php include 'refresh.php'; ?>
 	    <script src="jquery.js"></script>
