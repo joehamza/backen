@@ -36,7 +36,7 @@ $data8=array(
  file_put_contents('entree.txt', $data);
 file_put_contents('entot.txt', $data2);
  file_put_contents('sortie.txt', $data4);
- file_put_contents('https://github.com/joehamza/backen/blob/main/essai/api/sortot.txt', $data5);
+ file_put_contents('sortot.md', $data5);
  //$fichier = fopen('essai/api/sortot.txt', 'c+b');
             //fwrite($fichier, $data5);
  file_put_contents('entit.txt', $data6);
