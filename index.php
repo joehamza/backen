@@ -33,8 +33,8 @@ transform:translateX(0);
 <div class="aaa"><em class="txt">UCA DE SKIKDA</em></div></div></div>
 <img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:100px;top:7px;" />
 <br><br><br>
+<div id="message">
 <?php
-//echo"<div id='message'>";
 $entree = json_decode(file_get_contents("essai/api/sortot.txt"));
 $entot = json_decode(file_get_contents("essai/api/sortie.txt"));
 $entreshif = json_decode(file_get_contents("essai/api/entit.txt"));
@@ -51,7 +51,7 @@ ob_start();
 	<?php foreach ($entot as $ett) : ?>
 	<?php endforeach; ?>
 	<?php if($ett->Date!=''){ ?>
-<div id='message'>
+
     <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $et) : ?>
      
