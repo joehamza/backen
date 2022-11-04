@@ -33,7 +33,7 @@ transform:translateX(0);
 <div class="aaa"><em class="txt">UCA DE SKIKDA</em></div></div></div>
 <img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:100px;top:7px;" />
 <br><br><br>
-<?php require 'refresh.php'; ?>
+<?php include 'refresh.php'; ?>
 	    <script src="jquery.js"></script>
 	    <script>
 setInterval('loadm()',5000);
