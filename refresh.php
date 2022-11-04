@@ -49,7 +49,7 @@ ob_start();
         <tr><th>Total</th><th><?= $ent->c4?></th><th><?= $fos4 ?></th><th><?= $qe4 ?></th><th>/</th><th>/</th></tr>
         <?php endforeach; ?>
         <?php foreach ($entreshif as $es) : ?>
-        <tr><th colspan="6" align="center"><div style="color:blue;"><em>Shift <?= $es->navire ?> / début : <?= $es->jour ?> <?= $es->shift ?> le <?= $es->date ?></div> <br><div style="color:green;">(<?= $es->produit ?>)</em></div></th></tr>
+        <tr><th colspan="6" align="center"><p style="color:blue;"><em>Shift <?= $es->navire ?> / début : <?= $es->jour ?> <?= $es->shift ?> le <?= $es->date ?></p> <br><p style="color:green;">(<?= $es->produit ?>)</em></p></th></tr>
         <tr><th colspan='2'>Matin</th><th colspan='2'>Soir</th><th colspan='2'>Nuit</th></tr>
         <tr><th>Quantité</th><th>Camions</th><th>Quantité</th><th>Camions</th><th>Quantité</th><th>Camions</th></tr>
 <tr><td align='center'><?= $es->qm ?></td><td align='center'><?= $es->nm ?></td><td align='center'><?= $es->qs ?></td><td align='center'><?= $es->ns ?></td><td align='center'><?= $es->qn ?></td><td align='center'><?= $es->nn ?></td></tr>
