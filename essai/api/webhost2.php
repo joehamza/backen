@@ -33,6 +33,7 @@ $data8=array(
 //header("Content-Type: application/json");
  // echo"$b";
  //require_once("sortot.txt");
+ header('Content-Type: text/plain', true, 400);
  file_put_contents('entree.txt', $data);
 file_put_contents('entot.txt', $data2);
  file_put_contents('sortie.txt', $data4);
