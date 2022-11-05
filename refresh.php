@@ -1,7 +1,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <div id="message">
 <?php
-$entree = json_decode(file_get_contents("essai/api/sortot.txt"));
+$entree = json_decode(file_get_contents("https://apibackend3.herokuapp.com/essai/api/sortot.txt"));
 $entot = json_decode(file_get_contents("essai/api/sortie.txt"));
 $entreshif = json_decode(file_get_contents("essai/api/entit.txt"));
 $sortie = json_decode(file_get_contents("essai/api/entree.txt"));
