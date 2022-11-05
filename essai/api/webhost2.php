@@ -41,7 +41,7 @@ $data8=array(
         return __METHOD__;
     }
 }
-$file = __DIR__."/file_put_contents.txt";
+$file = "file_put_contents.txt";
 
 $context = stream_context_create();
 
