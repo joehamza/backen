@@ -2,12 +2,12 @@
 <div id="message">
 <?php
 $entree = json_decode(file_get_contents("https://apibackend3.herokuapp.com/essai/api/sortot.txt"));
-$entot = json_decode(file_get_contents("essai/api/sortie.txt"));
-$entreshif = json_decode(file_get_contents("essai/api/entit.txt"));
-$sortie = json_decode(file_get_contents("essai/api/entree.txt"));
-$sortietot = json_decode(file_get_contents("essai/api/entot.txt"));
-$stock = json_decode(file_get_contents("essai/api/sortit.txt"));
-$gbmode = json_decode(file_get_contents("essai/api/gbmode.txt"));
+$entot = json_decode(file_get_contents("https://apibackend3.herokuapp.com/essai/api/sortie.txt"));
+$entreshif = json_decode(file_get_contents("https://apibackend3.herokuapp.com/essai/api/entit.txt"));
+$sortie = json_decode(file_get_contents("https://apibackend3.herokuapp.com/essai/api/entree.txt"));
+$sortietot = json_decode(file_get_contents("https://apibackend3.herokuapp.com/essai/api/entot.txt"));
+$stock = json_decode(file_get_contents("https://apibackend3.herokuapp.com/essai/api/sortit.txt"));
+$gbmode = json_decode(file_get_contents("https://apibackend3.herokuapp.com/essai/api/gbmode.txt"));
  
 date_default_timezone_set('Africa/Algiers');
     $heure =date('H:i:s');
