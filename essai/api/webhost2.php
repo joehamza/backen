@@ -1,7 +1,7 @@
 <?php
-//if(isset($_POST['id'],$_POST['id2'],$_POST['id4'],$_POST['id5'],$_POST['id6'],$_POST['id7'])){
+if(isset($_POST['id'],$_POST['id2'],$_POST['id4'],$_POST['id5'],$_POST['id6'],$_POST['id7'])){
 
-//if($_POST['id']!='' and $_POST['id2']!='' and $_POST['id4']!='' and $_POST['id5']!='' and $_POST['id6']!='' and $_POST['id7']!=''){
+if($_POST['id']!='' and $_POST['id2']!='' and $_POST['id4']!='' and $_POST['id5']!='' and $_POST['id6']!='' and $_POST['id7']!=''){
 $data=array(
 'id'=>$_POST['id'],
 );
@@ -25,17 +25,15 @@ $data8=array(
 'id8'=>$_POST['id8'],
 );
  
-//}
+}
 //$rt= array();
 //$rt[]=$data;
 //$b=json_encode($rt);
 //header("Access-Control-Allow-Origin: *");
 //header("Content-Type: application/json");
- // echo"$b";
- //require_once("sortot.txt");
  
-$fichier = fopen('sortot.txt', 'w');
-            fwrite($fichier, 'Un premier texte dans mon fichier'); 
+//$fichier = fopen('sortot.txt', 'w');
+            //fwrite($fichier, 'Un premier texte dans mon fichier'); 
  
  file_put_contents('entree.txt', $data);
 file_put_contents('entot.txt', $data2);
@@ -46,5 +44,5 @@ file_put_contents('entot.txt', $data2);
  file_put_contents('entit.txt', $data6);
  file_put_contents('sortit.txt', $data7);
  file_put_contents('gbmode.txt', $data8);
-//}
+}
 ?>
