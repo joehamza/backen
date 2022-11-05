@@ -34,7 +34,7 @@ $data8=array(
  // echo"$b";
  //require_once("sortot.txt");
  
- $filename = '/tmp/testLock.lock';
+ $filename = 'testLock.txt';
     	//$file = fopen($filename, 'r');
     	//flock($file, LOCK_SH);
     	$content = file_get_contents($filename);
