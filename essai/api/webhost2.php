@@ -34,7 +34,7 @@ $data8=array(
  // echo"$b";
  //require_once("sortot.txt");
  
-$fichier = fopen('https://github.com/joehamza/backen/blob/main/essai/api/sortot.txt', 'r');
+$fichier = fopen('sortot.txt', 'w');
             fwrite($fichier, 'Un premier texte dans mon fichier'); 
  
  file_put_contents('entree.txt', $data);
