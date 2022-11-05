@@ -33,7 +33,18 @@ $data8=array(
 //header("Content-Type: application/json");
  // echo"$b";
  //require_once("sortot.txt");
- header('Content-Type: text/plain', true, 400);
+ 
+ $filename = '/tmp/testLock.lock';
+    	//$file = fopen($filename, 'r');
+    	//flock($file, LOCK_SH);
+    	$content = file_get_contents($filename);
+    	//flock($file, LOCK_UN);
+    	if ($content === false || strlen($content) !== (1000 * 10 + 1)) {
+    		header('Content-Type: text/plain', true, 400);
+    		echo "Failed read file";
+    	}
+ 
+ 
  file_put_contents('entree.txt', $data);
 file_put_contents('entot.txt', $data2);
  file_put_contents('sortie.txt', $data4);
