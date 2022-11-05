@@ -65,4 +65,14 @@ tx.classList.remove("text2");
 	setTimeout("f2()",10500);
 }
 </script>
+<script>
+	window.addEventListener('online',f3);
+function f3(){
+alert("Vous êtes en ligne");
+}
+window.addEventListener('offline',f4);
+function f4(){
+alert("Vous êtes hors ligne");
+}
+	</script>
 	   
