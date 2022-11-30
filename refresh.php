@@ -99,7 +99,7 @@ ob_start();
     <?php endforeach; ?>
     </table>
     <table border="1" style="border-collapse:collapse;font-size:25px">
-        <tr><td colspan="5" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Total sortie par produit</div></td></tr>
+        <tr><td colspan="6" align="center"><div style="font-size:30px;background-color:#333;color:#eee"">*Total sortie par produit</div></td></tr>
     <tr><th>Produit</th><th>Camion</th><th>Quantité</th><th>Wagon</th><th>Quantité</th><th>Total</th></tr>
     
     <?php foreach ($gbmode as $gbm) : ?>
