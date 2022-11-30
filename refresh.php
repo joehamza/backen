@@ -104,7 +104,8 @@ ob_start();
     
     <?php foreach ($gbmode as $gbm) : ?>
   <?php  $gbcq2=number_format($gbm->gbcq,2,',','');
-     $gbwq2=number_format($gbm->gbwq,2,',','');?>
+     $gbwq2=number_format($gbm->gbwq,2,',','');
+	$qqqt2=number_format($gbm->qqqt,2,',','');?>
     <div style="font-size:16px;">
         <tr><td align="center"> <?= $gbm->mode ?></td><td align="center"><?= $gbm->gbc ?></td><td align="center"> <?= $gbcq2 ?></td><td align="center"><?= $gbm->gbw ?></td><td align="center"><?= $gbwq2 ?></td><td align="center"><?= $qqqt2 ?></td></tr>
         <?php endforeach; ?>
