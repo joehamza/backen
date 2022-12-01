@@ -13,7 +13,7 @@ $entot = json_decode(file_get_contents("api2/sortot2.txt"));
 $gbme = json_decode(file_get_contents("api2/gbmode2.txt"));
 $sortie = json_decode(file_get_contents("api2/entree2.txt"));
 $sortietot = json_decode(file_get_contents("api2/entot2.txt"));
-$stock = json_decode(file_get_contents("api2/sortit2.txt"));
+$stock = json_decode(file_get_contents("api2/entit2.txt"));
 $gbmode = json_decode(file_get_contents("api2/gbmode2.txt"));
  
 date_default_timezone_set('Africa/Algiers');
