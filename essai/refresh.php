@@ -76,7 +76,7 @@ date_default_timezone_set('Africa/Algiers');
         </table>
     <br><br>
 	<?php } ?>
-	/////////////////////////////////////////////////////////////////////////////////////////////////
+	
 	<?php foreach ($sortietot as $sott) : ?>
 	<?php endforeach; ?>
 	<?php if($sott->Date!=''){ ?>
@@ -132,7 +132,7 @@ date_default_timezone_set('Africa/Algiers');
         </table>
     <br><br>
 	<?php } ?>
-	/////////////////////////////////////////////////////////////////////////////////////////////////
+	
 	<br><br>
 	<?php foreach ($stock as $st) : ?>
 	<?php endforeach; ?>
