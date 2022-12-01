@@ -41,7 +41,7 @@ transform:translateX(0);
 <img src="11.jpg"  style="width: 60px; height: 85px; position:absolute; left:100px;top:17px;" />
 <br><br><br><br>
 <?php include 'refresh.php'; ?>
-	    <script src="jquery.js"></script>
+	    <script src="../jquery.js"></script>
 	    <script>
 setInterval('loadm()',1000);
 function loadm(){
