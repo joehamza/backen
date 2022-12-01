@@ -21,21 +21,20 @@ date_default_timezone_set('Africa/Algiers');
 ?>
 <center>
 	<br><br>
-	<?php } ?>
 	<?php foreach ($entot as $entt) : ?>
 	<?php endforeach; ?>
 	<?php if($entt->Date!=''){ ?>
 <table border="1"  style="border-collapse:collapse;font-size:25px">
     <?php foreach ($entot as $entt) : ?>
 	
-    <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee">*Les entrées le <?=$entt->Date ?> ( <?=$heure?> )</div></td></tr>
+    <tr><td colspan="7" align="center"><div style="font-size:30px;background-color:#333;color:#eee">*Les entrÃ©es le <?=$entt->Date ?> ( <?=$heure?> )</div></td></tr>
     <?php endforeach; ?>
     <tr>
 	    <th>Organisme</th>
         <th>Camion</th>
-        <th>Quantité</th>
+        <th>QuantitÃ©</th>
         <th>Wagon</th>
-        <th>Quantité</th>
+        <th>QuantitÃ©</th>
         <th>Total</th>
 	    <th>Produit</th>
     </tr>
@@ -59,12 +58,12 @@ date_default_timezone_set('Africa/Algiers');
     $qf2=number_format($ent->q5,2,',','');
     $wf2=number_format($ent->wag5,2,',','');
     $tot2=number_format($ent->ooo5,2,',','');?>
-    <th>Total général</th><th><?= $ent->c5 ?></th><th><?= $qf2 ?></th><th><?= $ent->wa5 ?></th><th><?= $wf2 ?></th><th><?= $tot2 ?></th><th>/</th></tr>
+    <th>Total gÃ©nÃ©ral</th><th><?= $ent->c5 ?></th><th><?= $qf2 ?></th><th><?= $ent->wa5 ?></th><th><?= $wf2 ?></th><th><?= $tot2 ?></th><th>/</th></tr>
     <?php endforeach; ?>
     </table>
     <table border="1" width="80%" style="border-collapse:collapse;font-size:25px">
-        <tr><td colspan="6" align="center"><div style="font-size:30px;background-color:#333;color:#eee">*Total entrée par produit</div></td></tr>
-    <tr><th>Produit</th><th>Camion</th><th>Quantité</th><th>Wagon</th><th>Quantité</th><th>Total</th></tr>
+        <tr><td colspan="6" align="center"><div style="font-size:30px;background-color:#333;color:#eee">*Total entrÃ©e par produit</div></td></tr>
+    <tr><th>Produit</th><th>Camion</th><th>QuantitÃ©</th><th>Wagon</th><th>QuantitÃ©</th><th>Total</th></tr>
     
     <?php foreach ($gbme as $gbe) : ?>
   <?php  $gbcq2=number_format($gbe->gbcq9,2,',','');
